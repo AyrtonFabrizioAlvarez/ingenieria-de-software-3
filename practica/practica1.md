@@ -1,7 +1,7 @@
 # Practica 1
 ## Parte I: Conceptos generales  
 ### 1. Explique con sus palabras en qué consiste un proyecto.  
-Un proyecto es una secuencia de actividades única, complejas y conectadas que tienen un objetivo o propósito y que deben ser completadas en un tiempo específico, dentro del presupuesto y de acuerdo a las especificaciones.   
+Un proyecto es una **secuencia de actividades única, complejas y conectadas que tienen un objetivo o propósito y que deben ser completadas en un tiempo específico, dentro del presupuesto y de acuerdo a las especificaciones.**   
 - es cualquier actividad que dé como resultado un producto o un “entregable”
 - es una organización temporal creada con el propósito de entregar uno o más productos empresariales dentro de las restricciones de costo, calidad y recursos
 ### 2. Indique cuál es el trabajo de un líder de proyecto. Nombre al menos cinco tareas del mismo.  
@@ -240,22 +240,80 @@ Se dice influenciada, ya que no es una relación lineal directa entre la cantida
 
 ## Parte III: Costos
 ### 19. Explique a qué se hace referencia con el término “Estimación de costos”.
+Predicciones de cuanto tiempo, esfuerzo y perfiles de RRHH son requeridos para construir un sistema de software 
+
 ### 20. ¿Cuáles son las técnicas de estimación y para qué se utilizan?
-### 21. El modelo COCOMO original es una colección de tres modelos:
-**a. Básico**  
-**b. Intermedio**  
-**c. Avanzado o detallado**  
-**Explique las diferencias entre estos modelos.**  
+- **Opinión Experta:** toma ventaja de la experiencia de un personal de desarrollo senior. El desarrollador describe los parámetros del proyecto y el experto hace predicciones basadas en experiencias previas. 
+- **Analogía:** los estimadores comparan el proyecto propuesto con proyectos pasados. Identifican similitudes y diferencias. Es mas visible. Exige definir características claves.
+- **Descomposición:** El análisis se focaliza en el producto o en las tareas requeridas para construirlo. Se basa en la descomposición del producto en componentes y de las actividades en tareas. Se basan en casos promedios o experiencias pasadas.
+- **Modelos:** son técnicas que identifican contribuyentes claves al esfuerzo, generando fórmulas matemáticas que relacionan estos items al esfuerzo. Estas técnicas se pueden aplicar con los siguientes enfoques: 
+  - **Bottom-Up:** comienza con las partes de menor nivel y provee estimaciones para cada una de ellas. 
+  - **Top-Down:** estima el producto o proceso completo. Las estimaciones para cada componente son calculadas como porciones relativas del todo.   
+
+**<u>La Estimación de Costos tiene dos usos:</u>**  
+- **en planificación:** se necesita saber cuantos recursos va a insumir 
+- **en control:** se necesita saber cuanto se hizo y cuanto falta.
+**Se necesitan métodos predictivospara estimar la complejidad del software antes de que sea desarrollado. **
+
+### 21. El modelo COCOMO original es una colección de tres modelos: (**Explique las diferencias entre estos modelos.**)
+**a. Básico:** aplicable cuando se conoce muy poco del proyecto
+
+**b. Intermedio** aplicable luego de la especificación de requerimientos
+
+**c. Avanzado o detallado** aplicable cuando se termina el diseño
+
 ### 22. Los modelos calculan el esfuerzo requerido E a través de una fórmula de la forma: E = a x Sb x F , y la duración estimada a través de la fórmula: D = c x E d
 **a. ¿Qué valor toma F para el modelo básico?**  
+F (Factor de ajuste) toma el valor 1 para el modelo básico ya que no tiene en cuenta los conductores de costos.
+
 **b. Describir brevemente en función de qué tipos de variables se calcula el factor de ajuste F en los otros dos modelos.**  
-**c. Indicar cómo varían los valores de a y b, y c y d en ambas fórmulas de acuerdo al modo utilizado.**  
+F se calcula también en función de las siguientes variables **<u>Atributos de Costos</u> o <u>Conductores de Costos</u>**.  
+Estas tratan de capturar el impacto del entorno del proyecto en el costo de desarrollo.   
+De un análisis estadístico de más de 100 factores que influencian el costo, Boehm retuvo 15 de ellos para COCOMO. 
+Se agrupan en cuatro categorías: 
+1) **atributos del producto**
+2) **atributos del hardware** 
+3) **atributos del personal**
+4) **atributos del proyecto**
+
+**c. Indicar cómo varían los valores de a y b, y c y d en ambas fórmulas de acuerdo al modo utilizado.** 
+se obtienen de tablas del modelo en función del tipo de sistema
+
 **d. Describir las características generales de sistemas que apliquen a cada uno de estos modos: Dar ejemplos.**  
-- **Orgánico**
-- **Semi-embebido**
-- **Embebido**
+- **orgánicos:** involucra procesamiento de datos, uso de bases de datos y se focaliza en transacciones y recuperación de datos. 
+  - **Ejemplo: sistema de facturación**
+- **embebido:** contiene software de tiempo real que es una parte integral de un sistema mayor basado en hardware.
+  - **Ejemplo: control de ascensores**  
+- **semi-embebido:** entre orgánico y embebido – presenta mayor procesamiento de transacciones. 
+  - **Ejemplo: monitoreo de una red**
+
 ### 23. ¿Cuáles son los principales objetivos considerados en el desarrollo del modelo COCOMO 2.0? Explique diferencias con la versión original.
+El modelo original de COCOMO resultó muy exitoso, sin embargo su aplicación no es práctica para entornos modernos de desarrollo.  
+<br>
+
+**Surge COCOMO II, cuyos objetivos son:**
+- desarrollar modelos de costos y de estimación acordes a las prácticas actuales 
+- desarrollar bases de datos de costos y herramientas que soporten una mejora continua del modelo
+- proveer un framework analítico cuantitativo, y un conjunto de herramientas y técnicas para evaluar los efectos de las mejoras en los costos de ciclos de vida y en las planificaciones
+
+**COCOMO II está compuesto por tres modelos:**
+- **Modelo de la Aplicación:** basado en Puntos Objeto
+- **Modelo de Diseño Temprano:** usado para obtener estimaciones de costo y duración antes de finalizar el diseño de la arquitectura
+- **Modelo Post-Arquitectura:** el modelo más detallado, con nuevos conductores de costos, y nuevas ecuaciones 
+
 ### 24. Explique qué es la economía de escala. De al menos dos ejemplos.
+En COCOMO II el esfuerzo es expresado en Personas Mes (PM).  
+**<u>PM nominal = A * (Tamaño)B</u>**  
+- El **Tamaño** es expresado en **KSLOC**.
+- **A:** intenta cuantificar los efectos multiplicativos en el esfuerzo de proyectos de tamaño creciente 
+- **B:** intenta medir la economía (o no economía) de escala encontrada en proyectos de diferentes tamaños. 
+  - Si **B < 1.0** -> el proyecto exhibe economía de escala <u>(la productividad aumenta a medida que aumenta el tamaño del producto)</u> 
+  - Si **B = 1.0** -> la economía, o no economía están balanceadas 
+  - Si **B > 1.0** -> el proyecto no exhibe economía de escala <u>(aumento de comunicación, problemas de integración)</u>
+<br>
+
+- Ejemplo de **economía de escala** -> uso de herramientas CASE
+- Ejemplo de **no economía de escala** -> mayor comunicación, y dependencias
 
 
 
