@@ -318,26 +318,155 @@ En COCOMO II el esfuerzo es expresado en Personas Mes (PM).
 
 
 ## Parte IV: Gestión de proyectos
-### 25. Explicar qué es la gestión de los beneficios y en qué consiste su enfoque.
+### 25. Explicar qué es la gestión de los beneficios y en qué consiste su enfoque.  
+La gestión de los beneficios es el proceso de identificar, definir, cuantificar, realizar y revisar los beneficios
+que un programa o proyecto debe entregar a sus clientes y partes interesadas. Su objetivo es asegurar
+que los beneficios estén alineados con los resultados estratégicos, sean específicos, medibles, realizables,
+realistas y limitados en el tiempo.  
+***Enfoque:***  
+- **Identificación y cuantificación:** Definir beneficios claros y medibles en áreas como calidad de servicio, sociedad, economía, ajuste estratégico y administración interna.
+- **Planificación:** Crear un plan de realización de beneficios con cronogramas, hitos y actividades de traspaso.
+- **Realización:** Implementar productos del proyecto y gestionar cambios organizacionales para lograr los beneficios.
+- **Revisión:** Evaluar periódicamente el valor de los beneficios esperados y realizados, validando su alineación con los objetivos del programa
 ### 26. ¿Cuáles son las características principales de la gestión de los interesados?
+Las características principales de la gestión de los interesados son:  
+- **Identificación y análisis de stakeholders:** Reconocer a actores internos (agencias gubernamentales, funcionarios) y externos (ciudadanos, proveedores, prensa), y analizar sus intereses, influencia e impacto mediante herramientas como mapas y matrices (páginas 34-36, 38-40).
+- **Planificación estratégica de comunicación:** Definir objetivos claros, canales (seminarios, boletines, medios) y mensajes consistentes para mantener la transparencia y alinear expectativas (páginas 42-44).
+- **Compromiso continuo:** Gestionar relaciones de forma proactiva durante todo el ciclo de vida del programa, asegurando participación, apoyo y responsabilidad de los stakeholders (páginas 25-27).
+- **Enfoque estructurado:** Utilizar procesos como identificación, análisis, estrategias de gestión y medición de efectividad, vinculados a la gobernanza del programa (páginas 32-33).
 ### 27. Indicar cuáles son los objetivos de la gestión de los interesados y a qué preguntas responde.
-### 28. ¿De qué forma se representa la identificación de los interesados y sus intereses? Ejemplifique.
-### 29. Indique qué datos se incluyen al momento de crear una matriz de impacto y qué aporta el análisis de los mismos.
-### 30. ¿Qué datos tiene un plan de comunicación dentro de la gestión de los interesados? Mencione posibles canales de comunicación.
+**Los objetivos de la gestión de los interesados son:**  
+- **Identificar stakeholders** y sus intereses, influencias e impacto en el programa (páginas 34-36, 38).
+- **Asegurar compromiso**, apropiación y apoyo mediante comunicación clara y alineada con los objetivos del programa (páginas 25-26).
+- **Gestionar expectativas y relaciones** para reducir conflictos y garantizar resultados positivos (páginas 4, 29).
 
+<br>
+
+**Responde a las preguntas:**  
+- **¿Quiénes son?** (identificación de actores internos/externos)
+  - Clientes o consumidores que serán afectados por los resultados del programa
+  - Organizaciones patrocinadoras del programa
+  - Organizaciones afectadas por el programa
+  - Proveedores de bienes y servicios
+  - Órganos políticos y regulatorios
+  - Equipos de gestión de proyectos y programas, etc.
+- **¿Qué intereses/influencias tienen?** (análisis mediante matrices de impacto)
+  - Entender los requisitos, los intereses y el impacto que los stakeholders pueden tener en un programa es vital para asegurar una comunicación adecuada.
+  - Esto es necesario para diseñar canales de comunicación apropiados que respondan a las necesidades e intereses de los stakeholders.
+- **¿Cómo gestionar su participación?** (planificación de estrategias y canales de comunicación) (páginas 42-44).
+- **¿Cuándo y cómo medir efectividad?** (evaluación continua del compromiso y ajustes) (páginas 31, 45)
+
+
+### 28. ¿De qué forma se representa la identificación de los interesados y sus intereses? Ejemplifique.
+La identificación de los interesados y sus intereses se representa mediante herramientas como:  
+1. **Mapa de stakeholders:**
+   - Tabla que relaciona actores con sus áreas de interés clave (dirección estratégica, finanzas, cambios operativos, etc.).
+   - **ejemplo:**
+   - ![ejercicio28](./imagenes/practica1-ejercicio28.jpeg) 
+2. **Matriz de impacto/influencia:**
+   - Gráfico que clasifica a los stakeholders según su importancia en el programa y el impacto del programa en ellos.
+   - Ejemplo: Stakeholders con alta importancia y alto impacto (ej: ciudadanos) requieren "consulta activa", mientras que aquellos con baja importancia y bajo impacto (ej: proveedores menores) solo necesitan "mantenerse informados".
+
+### 29. Indique qué datos se incluyen al momento de crear una matriz de impacto y qué aporta el análisis de los mismos.
+La matriz de impacto incluye los siguientes datos:  
+1. **Nivel de importancia del stakeholder en el programa:**
+   - Determina su influencia, autoridad o relevancia estratégica (alta, media, baja).
+2. **Impacto del programa en el stakeholder:**
+   - Evalúa cómo el programa afecta sus intereses u operaciones (alto, medio, bajo).
+3. **Estrategias de compromiso:**
+   - Acciones diferenciadas según su posición en la matriz (ej: "consulta activa", "mantener informado").
+
+![ejercicio29](./imagenes/practica1-ejercicio29.jpeg)   
+
+**Aportes del análisis:**  
+- **Priorización:** Identifica stakeholders críticos para enfocar recursos y atención (ej: ciudadanos con alta importancia/impacto).
+- **Comunicación efectiva:** Define canales y mensajes adaptados a cada grupo (ej: seminarios para consulta activa, boletines para información general).
+- **Reducción de riesgos:** Mitiga conflictos al gestionar expectativas y alinear intereses
+- **Toma de decisiones estructurada:** Vincula la gestión de stakeholders con la gobernanza del programa
+
+### 30. ¿Qué datos tiene un plan de comunicación dentro de la gestión de los interesados? Mencione posibles canales de comunicación.
+**El plan de comunicación en la gestión de los interesados incluye los siguientes datos**:  
+
+1. **Contenido:**
+   - Qué información se comunicará (ej: avances, beneficios, cambios) y su nivel de autorización.
+2. **Métodos y canales:**
+   - Cómo se transmitirá la información (ej: boletines, seminarios, medios).
+3. **Responsables:**
+   - Quién elabora, aprueba y distribuye los mensajes (ej: equipo de gestión, líderes).
+4. **Frecuencia y cronograma:**
+   - Cuándo y con qué periodicidad se realizarán las comunicaciones.
+5. **Mecanismos de feedback:**
+   - Formas de recibir y procesar comentarios (ej: encuestas, reuniones).
+
+**Posibles canales de comunicación**:
+- **Seminarios/workshops:** Para contacto directo y discusión profunda.
+- **Prensa/medios:** Para alcance masivo en stakeholders externos.
+- **Boletines informativos:** Para actualizaciones periódicas.
+- **Anuncios formales:** Para cambios críticos o decisiones oficiales.
+- **Reuniones internas:** Para coordinación con equipos o stakeholders internos.
+- **Plataformas digitales:** Correos electrónicos, portales web o redes sociales.
 
 
 ## Parte V: Ejercicios
-### 31. Una empresa vende seguros para bienes inmuebles. Cuenta con 10 empleados de planta y 20 vendedores contratados. En base a requerimientos de los directivos, la Gerencia de Sistemas definió la ejecución de dos proyectos para el período 2017-2018:
-#### 1. Comprar dispositivos móviles para ayudar a los 20 vendedores en sus tareas diarias.
-#### 2. Proveer un sistema de sueldos y jornales.
-**Para cada proyecto se pide:**  
+### 31. Una empresa vende seguros para bienes inmuebles. Cuenta con 10 empleados de planta y 20 vendedores contratados. En base a requerimientos de los directivos, la Gerencia de Sistemas definió la ejecución de dos proyectos para el período 2017-2018:  
+**1. Comprar dispositivos móviles para ayudar a los 20 vendedores en sus tareas diarias.**  
+**2. Proveer un sistema de sueldos y jornales.**   
+**Para cada proyecto se pide:**    
 **a. Clasificarlo y justificar dicha clasificación.**  
 **b. Identificar al menos 3 tareas que sería necesario ejecutar en cada proyecto – analizar si están conectadas y en caso afirmativo, explicar cómo.**  
-**c. Explicar dos situaciones que puedan hacer fracasar el proyecto.**  
+**c. Explicar dos situaciones que puedan hacer fracasar el proyecto.**
+
+**Proyecto 1: (Comprar dispositivos móviles para ayudar a los 20 vendedores en sus tareas diarias)**  
+- **Tipo D**
+  - **riesgo y complejidad muy bajos** ya que no reviste mucha dificultad la compra de dispositivos móviles y fácilmente podemos saber las características necesarias
+  - **tecnología practica** ya que no necesitamos algo de avanzada, sino algo práctico que se ajuste al uso de los vendedores en sus tareas diarias
+  - los problemas que pudieran surgir no depende de la dificultad o riesgo del proyecto sino más bien podrían ser de factores externos como el proveedor de los dispositivos
+- **Tareas:**
+  - Definir dispositivo móvil a comprar
+  - Buscar el mejor lugar/precio para comprar
+  - Capacitar a los 20 vendedores en su correcto uso
+  - Las tareas estan conectadas, ya que se deben por ejemplo ejecutar en el orden establecido para que "tengan sentido", (no podemos buscar el mejor precio sin antes definir el dispositivo que especificamente)
+- **Situaciones de Fracaso:**
+  - **No prestar atención a la calidad**, se puede no investigar el mejor tipo de dispositivo a utilizar por los vendedores
+  - **Inadecuada planificacion y coordinación de recursos**, puede no planificarse y coordinar lo suficiente la compra y entrega de los dispositivos y por esto el proyecto se veria retrasado 
+
+**Proyecto 2: (Proveer un sistema de sueldos y jornales)**
+- **Tipo B**
+  - **riesgo y complejidad medios**, ya que es sensible el trabajar con sueldos, ya que esto puede generar un problema económico en la empresa
+  - **tecnología actual**, este proyecto es sensible al manejar sueldos y es importante manejar tecnología actual que contemple los usos corporativos
+  - **problemas alta probabilidad**, tanto por regas de negocio interna de la empresa, como el contexto sociopolítico pueden generar problemas y cambios complejos en nuestro proyecto
+- **Tareas:**
+  - Verificar requerimientos específicos para el sistema de sueldos y jornales que contemplen las reglas de negocio del dominio especifico
+  - Definir las tecnologías a utilizar
+  - Generar procedimientos de mitigacion de riesgos ya que el manejo de sueldos y jornales es un pounto crítico para cualquier organización
+  - Las tareas estan directamente conectadas, ya que este proceso debe darse secuencialmente para que una vez obtenidos los requerimientos podamos definir una tecnologia, y a su vez poder definir estrategias e mitigacion de riesgos
+- **Situaciones de fracaso:**
+  - **No prestar suficiente atencion al caso de negocio**, donde podríamos dejar de lado factores escenciales para definir las reglas que guiaran el desarrollo de nuestro proyecto
+  - **Falta de comunicacion con los interesados**, en este punto se podría perder información fundamental para la definicion de requerimientos de lso expertos en el dominio
+
+
+
 ### 32. Elegir una organización y describir a qué se dedica (cuál es su misión). Formular un objetivo estratégico para el cual se necesite la ejecución de un programa y luego:
 **a. Identificar un programa para la implementación del objetivo estratégico que incluya al menos tres proyectos.**  
-**b. Explicar por qué los proyectos forman parte del programa.**  
+**b. Explicar por qué los proyectos forman parte del programa.**
+
+**Organización: Cruz Roja**
+- **Misión:** Prevenir y aliviar el sufrimiento humano, protegiendo la vida y la salud, y garantizando el respeto de la persona humana.
+- **Objetivo estratégico:** Mejorar la respuesta ante desastres naturales en comunidades vulnerables.
+
+**a. Programa: Programa de Fortalecimiento de Respuesta a Emergencias.**  
+**Proyectos:**  
+- **Proyecto 1:** Capacitación en primeros auxilios para voluntarios.
+- **Proyecto 2:** Implementación de centros móviles de atención sanitaria.
+- **Proyecto 3:** Sistema de alerta temprana y comunicación comunitaria.
+**b. Explicación:**  
+Los proyectos forman parte del mismo programa porque están coordinados para lograr un **objetivo común: mejorar la respuesta a emergencias**. Se enfocan en fortalecer capacidades humanas, infraestructura sanitaria y comunicación estratégica, buscando beneficios agregados.
+
+
+
+
+
+
 ### 33. Una importante empresa de servicios de salud, con más de 20.000 empleados, tiene como proyecto proveer a sus empleados un sistema online que los ayude a mejorar y mantener su estado de salud. Hoy en día, la empresa paga un 20% más que el promedio del mercado en servicios de salud prepaga. Se cree que, con este sistema, se mejorará la salud de sus empleados y se podrán negociar mejores precios con la prepaga, ahorrando al menos $150 al año por empleado. Se busca terminar el proyecto en 6 meses con un presupuesto de $500 000. El sistema requiere:
 - **Permitir a los empleados registrarse a programas de recreación patrocinados por la compañía, tales como fútbol, básquet, ciclismo y otros deportes.**
 - **Permitir a los empleados registrarse a programas y clases para ayudarlos a controlar su peso, reducir el stress, dejar de fumar, etc**
@@ -345,7 +474,37 @@ En COCOMO II el esfuerzo es expresado en Personas Mes (PM).
 - **Ofrecer incentivos a los que se inscriben en los programas y tienen un buen desenvolvimiento en ellos (dejando de fumar, ganando competencias, etc.)**
 **Para este proyecto se busca formular una estrategia de gestión de los interesados con:**  
 **a. Identificación de al menos tres grupos de interesados.**  
+- empleados de la empresa de salud
+- empleadores de la empresa de salud
+- personal de la prepaga de salud
 **b. Creación del mapa de partes interesadas.**  
+
+| STAKEHOLDERS                     | DIRECCIÓN ESTRATÉGICA | FINANCIERA | CAMBIOS OPERACIONALES | INTERFAZ CON LOS CLIENTES
+| -------------------------------- | --------------------- | ---------- | --------------------- | -------------------------
+| Administradores prepaga          |     bajo              |     bajo   |      alto             | bajo
+| Personal empresa de salud        |     medio             |     bajo   |      medio            | alto
+| Administradores empresa de salud |     alto              |     alto   |      alto             | bajo
+
+
 **c. Creación de la matriz de impacto de las partes interesadas.**  
+![ejercicio32](./imagenes/practica1-ejercicio32.png) 
+
 **d. Elaboración de un plan de comunicación.**  
+
+**Objetivo:**  
+- Mantener informados y comprometidos a todos los interesados durante el proyecto.
+
+**Frecuencia:**  
+- **Empleados:** actualizaciones quincenales.
+- **Gerencia:** informes mensuales de avance.
+- **Proveedores de software:** reuniones semanales.
+
+**Contenido:**
+- Progreso del proyecto.
+- Cambios relevantes.
+- Próximas actividades.
+- Resultados esperados.
+
 **e. Definición de los canales de comunicación.**  
+- **Empleados:** Correos electrónicos internos, boletines, anuncios, informes, etc.
+- **Gerencia:** Reuniones de presentación de informes y reportes ejecutivos.
