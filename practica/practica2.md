@@ -222,8 +222,10 @@ La norma permite distintos métodos de combinación (cuantitativos o cualitativo
   - Esto es parte del principio de transparencia y trazabilidad en la evaluación de calidad.
 
 ## 12.   Explique cómo se conforma la familia ISO/IEC 25000 (SQuaRE). 
+
+
 ## 13.   ¿Qué  norma  de  la  familia  ISO/IEC  25000  reemplaza  a  la  ISO/IEC  9126-1?  Explique  las diferencias. 
-## 14.   ¿Qué  norma  de  la  familia  ISO/IEC  25000  reemplaza  a  la  ISO/IEC  14598?  Explique  las diferencias.                        
+## 14.   ¿Qué  norma  de  la  familia  ISO/IEC  25000  reemplaza  sa  la  ISO/IEC  14598?  Explique  las diferencias.                        
 
 
 # Parte III: Calidad de Datos 
