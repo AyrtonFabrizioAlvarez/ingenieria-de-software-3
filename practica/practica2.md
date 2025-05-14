@@ -222,41 +222,337 @@ La norma permite distintos métodos de combinación (cuantitativos o cualitativo
   - Esto es parte del principio de transparencia y trazabilidad en la evaluación de calidad.
 
 ## 12.   Explique cómo se conforma la familia ISO/IEC 25000 (SQuaRE). 
+La familia `ISO/IEC 25000 (SQuaRE)` es un conjunto de normas organizadas en 5 divisiones: **gestión, modelos, medición, requisitos y evaluación**. Su objetivo es proporcionar un marco completo y unificado para **especificar, medir y evaluar la calidad del software y de los datos**. Reemplaza y amplía las normas `ISO/IEC 9126` y `14598`, y es el estándar actual más utilizado en la industria y en evaluaciones académicas.  
+
+1. `ISO/IEC 2500n` – **División de Gestión de la Calidad**
+   - **ISO/IEC 25000:** Guía general de SQuaRE (estructura y objetivos del modelo).
+   - **ISO/IEC 25001:** Planificación y gestión de la calidad del software.
+   - <u>Su función es introducir el modelo y dar lineamientos sobre cómo usarlo correctamente.</u>
+
+2. `ISO/IEC 2501n` – **Modelos de Calidad**
+   - **ISO/IEC 25010:** Modelo de calidad del producto y de calidad en uso (reemplaza al ISO/IEC 9126).
+   - **ISO/IEC 25012:** Modelo de calidad de datos.
+   - <u>Define las características y subcaracterísticas para evaluar software y datos, tanto en su forma técnica como en su uso.</u>
+
+3. `ISO/IEC 2502n` – **Medición de la Calidad**
+   - **ISO/IEC 25020:** Modelo de referencia para la medición.
+   - **ISO/IEC 25022:** Medición de la calidad en uso.
+   - **ISO/IEC 25023:** Medición de la calidad del producto de software.
+   - **ISO/IEC 25024:** Medición de la calidad de los datos.
+   - <u>Describe métricas específicas y métodos de medición para evaluar cada característica del modelo.</u>
+
+4. `ISO/IEC 2503n` – **Requisitos de Calidad**
+   - **ISO/IEC 25030:** Especificación de requisitos de calidad.
+   - <u>Ayuda a elicitarlos, documentarlos y validarlos durante el análisis de requisitos.</u>
+
+5. `ISO/IEC 2504n` – **Evaluación de la Calidad**
+   - **ISO/IEC 25040:** Proceso general de evaluación (reemplaza a ISO/IEC 14598).
+   - **ISO/IEC 25041 a 25045:** Guías para evaluadores, módulos y criterios.
+   - <u>Define cómo planificar, ejecutar, documentar y auditar evaluaciones de calidad, aplicables tanto a productos en desarrollo como terminados.</u>
 
 
 ## 13.   ¿Qué  norma  de  la  familia  ISO/IEC  25000  reemplaza  a  la  ISO/IEC  9126-1?  Explique  las diferencias. 
-## 14.   ¿Qué  norma  de  la  familia  ISO/IEC  25000  reemplaza  sa  la  ISO/IEC  14598?  Explique  las diferencias.                        
+La norma `ISO/IEC 25010` reemplaza a `ISO/IEC 9126-1`, actualizando el modelo de calidad del software: **pasa de 6 a 8 características, separa claramente la calidad en uso, y da mayor peso a temas modernos como seguridad e interoperabilidad**. Representa la evolución natural del modelo y es el estándar actual adoptado en la industria.  
 
+| Aspecto                                             | ISO/IEC 9126-1 (reemplazada)              | ISO/IEC 25010 (vigente)                             |
+| --------------------------------------------------- | ----------------------------------------- | --------------------------------------------------- |
+| Cantidad de características                      | 6                                         | 8                                                   |
+| Modelo de calidad en uso                         | Incorporado mínimamente                   | Desarrollado con más detalle y 5 subcaracterísticas |
+| Seguridad                                       | Subcaracterística dentro de funcionalidad | Es una **característica principal independiente**   |
+| Compatibilidad                                   | No figura como característica             | Se incorpora como característica principal          |
+| Estructura de subcaracterísticas                 | Más general y menos detallada             | Más precisa y adecuada al contexto moderno          |
+| Separación de calidad interna / externa / en uso | Implícita                                 | Explícita y formalmente definida                    |
+
+
+
+## 14.   ¿Qué  norma  de  la  familia  ISO/IEC  25000  reemplaza  sa  la  ISO/IEC  14598?  Explique  las diferencias.                        
+La norma `ISO/IEC 25040` reemplaza a la antigua `ISO/IEC 14598`. La nueva norma moderniza el proceso de evaluación, lo estructura en cinco etapas, lo integra con el modelo de calidad `ISO/IEC 25010` y lo vuelve compatible con toda la familia SQuaRE. Representa un enfoque más completo, trazable y alineado con las exigencias actuales del desarrollo y evaluación de software.  
+
+| Aspecto                            | **ISO/IEC 14598** (reemplazada)                             | **ISO/IEC 25040** (vigente)                                                                  |
+| ---------------------------------- | ----------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| Relación con modelos de calidad | Basada en ISO/IEC 9126                                      | Basada en ISO/IEC 25010 (modelo más moderno y completo)                                      |
+| Proceso de evaluación           | Define pasos básicos para evaluar software                  | Estructura detallada en **5 etapas formales** con actividades y productos esperados          |
+| Documentación                   | Menos detallada en cuanto a tipos de evaluadores y entornos | Más detallada: distingue entre evaluadores internos, externos, adquirientes, desarrolladores |
+| Enfoque                         | Centrado en el producto                                     | Integra el producto, contexto de uso y objetivos del negocio                                 |
+| Interoperabilidad               | No contemplada de forma explícita                           | Compatible con el resto de la familia ISO/IEC 25000                                          |
+
+
+La norma `ISO/IEC 25040` define claramente **cinco etapas**:
+- Establecer los requisitos de la evaluación
+- Especificar la evaluación
+- Diseñar la evaluación
+- Ejecutar la evaluación
+- Finalizar la evaluación
+
+Cada una de estas etapas tiene actividades bien definidas, como identificar los módulos a evaluar, establecer criterios de decisión, seleccionar métricas, y generar informes con trazabilidad.
 
 # Parte III: Calidad de Datos 
 ## 15.   Describa el concepto de Calidad de Datos IS0/IEC 25012. 
+La **calidad de datos**, según la norma `ISO/IEC 25012`, *es la capacidad que tienen los datos para satisfacer necesidades explícitas o implícitas bajo condiciones de uso*. Se evalúa desde dos perspectivas: **inherente (propiedades propias del contenido) y dependiente del sistema (condiciones técnicas de gestión)**. Esta distinción permite gestionar de forma más precisa y completa la calidad en proyectos informáticos complejos.
+
 ## 16.   Defina la clasificación propuesta por el modelo. 
- 
- 
+ | Clasificación                | Características                                                                                      | 
+| ---------------------------- | ---------------------------------------------------------------------------------------------------- |
+| **Inherentes**               | Exactitud, Completitud, Consistencia, Credibilidad, Actualidad                                       |
+| **Dependientes del sistema** | Disponibilidad, Portabilidad, Recuperabilidad                                                        |
+| **Mixtas**                   | Accesibilidad, Cumplimiento, Confidencialidad, Precisión, Trazabilidad, Comprensibilidad, Eficiencia |
+
+**Inherentes**: Son gestionadas mayormente por los expertos del dominio del negocio.  
+**Dependientes del sistema**: Son responsabilidad del equipo técnico o de infraestructura.  
+**Mixtas**: Son clave para la interoperabilidad, la seguridad y la auditoría de datos.  
+
+
 # Parte IV: Calidad de Servicio 
 ## 17.   Describa el concepto de Calidad de Servicio ISO/IEC 20000. 
+La **calidad de servicio**, según la `ISO/IEC 20000`, es la *capacidad de una organización de TI para entregar servicios eficientes, controlados y mejorables, que cumplan con los acuerdos establecidos con los clientes*. Se evalúa mediante un conjunto de procesos definidos en un **Sistema de Gestión de Servicios (SGS)**, alineado con prácticas como ITIL y normativas de calidad internacionales.
+
 ## 18.   Explique cómo se organiza el estándar. 
+El estándar `ISO/IEC 20000` se organiza en múltiples partes, siendo la Parte 1 la única certificable, que define los requisitos para implementar un **Sistema de Gestión de Servicios (SGS)**. Las partes restantes son guías complementarias para su aplicación, alcance, procesos y ejemplos, permitiendo a las organizaciones lograr un servicio de TI alineado con las buenas prácticas internacionales.
+
+- Parte 1: `ISO/IEC 20000-1` – **Requisitos del sistema de gestión de servicios**
+  - <u>Es la parte central y certificable del estándar.</u>
+  - Define los requisitos obligatorios que una organización debe cumplir para implantar un SGS eficaz.
+  - Incluye procesos como:
+    - Gestión de incidentes
+    - Gestión de problemas
+    - Gestión del cambio
+    - Gestión de niveles de servicio
+    - Continuidad del servicio
+    - Entrega, planificación y control
+
+- Parte 2: `ISO/IEC 20000-2` – **Guía para la aplicación del sistema**
+  - Proporciona buenas prácticas para implementar los requisitos de la parte 1.
+  - No es certificable, pero sirve de apoyo práctico.
+  - Basada en ITIL, pero más general y aplicable a distintos contextos.
+
 
 
 # Parte V: Calidad de Procesos de Software 
 ## 19.   Explique con sus palabras qué es un proceso. 
+Un proceso es un ***conjunto de actividades relacionadas y organizadas que transforma entradas en salidas, con el objetivo de generar valor para quienes utilizan sus resultados***, ya sea dentro o fuera de la organización.  
+Elementos fundamentales de un proceso según la norma:
+- **Entradas (inputs):** datos, insumos o condiciones iniciales.
+- **Actividades:** tareas específicas que se ejecutan con una lógica determinada.
+- **Recursos:** personas, herramientas, infraestructura.
+- **Salidas (outputs):** productos, servicios o resultados generados.
+- **Controles y retroalimentación:** normas, objetivos, métricas y mejoras.
+
 ## 20.   ¿A qué se considera “Proceso de Software”? 
-## 21.   Describa el Modelo de Calidad de Procesos de Software ISO/IEC 12207. 
+Un proceso de software es un **conjunto estructurado de actividades, tareas, métodos, roles y herramientas que una organización utiliza para desarrollar, mantener y evolucionar un producto de software.**  
+***“El proceso de software es un concepto más amplio basado en el ciclo de vida, que cubre todos los elementos necesarios como tecnología, personal, artefactos, organización, etc.”***  
+**Componentes del proceso de software**
+- **Actividades**: análisis, diseño, codificación, pruebas, mantenimiento, etc.
+- **Métodos**: metodologías como Scrum, XP, RUP, cascada, etc.
+- **Herramientas**: IDEs, sistemas de control de versiones, gestores de requerimientos, etc.
+- **Recursos humanos**: desarrolladores, testers, analistas, usuarios.
+- **Artefactos**: código, documentación, casos de prueba, informes.
+- **Normas y estándares**: calidad, seguridad, documentación (ej: ISO/IEC 12207, 25000).
+
+**¿Para qué sirve definir un proceso de software?**
+- Organiza y estructura el trabajo.
+- Asegura repetibilidad y control.
+- Facilita la mejora continua (modelos como CMMI, ISO/IEC 33000).
+- Permite evaluar la calidad del producto a partir del proceso (idea clave en la cátedra).
+
+## 21.   Describa el Modelo de Calidad de Procesos de Software ISO/IEC 12207.  
+La `ISO/IEC 12207` es una norma internacional que establece un modelo de procesos estándar para el ciclo de vida del software, incluyendo:
+- Desarrollo
+- Mantenimiento
+- Operación
+- Gestión
+- Soporte
+
+**Su objetivo es definir un conjunto completo, estructurado y adaptable de procesos que puede utilizar cualquier organización para planificar, ejecutar, monitorear y mejorar proyectos de software, garantizando la calidad del proceso y, en consecuencia, del producto.**
+
+**Procesos de Acuerdo (Agreement processes)**
+- Regulan las relaciones contractuales entre las partes (cliente – proveedor).
+- **Ejemplos:** Gestión del contrato, Adquisición, Suministro
+
+**Procesos Organizacionales de Apoyo al Proyecto (Organizational Project-Enabling Processes)**  
+- Establecen las condiciones organizativas para que los proyectos se ejecuten correctamente.  
+- **Ejemplos:** Gestión de la calidad, Formación, Infraestructura  
+
+**Procesos de Gestión Técnica (Technical Management Processes)**  
+- Aseguran la planificación, seguimiento y control del proyecto y sus riesgos.  
+- Ejemplos: Planificación de proyectos, Evaluación y mejora, Gestión de configuración, Gestión de riesgos  
+
+**Procesos Técnicos (Technical Processes)**  
+- Se centran en la ingeniería del producto: análisis, diseño, desarrollo, prueba, entrega.  
+- **Ejemplos:** Requisitos, Diseño, Implementación, Integración, Verificación y validación, Mantenimiento  
+
 ## 22.   Describa  el  Modelo  de  Capacidad  de  Mejora  de  Procesos  de  Software  ISO/IEC  15504. ¿Qué nueva familia de normas lo reemplaza? Explique las diferencias. 
+La `ISO/IEC 15504 (SPICE)` fue el modelo de referencia para evaluar la capacidad y mejora de procesos de software, combinando procesos (como los de `ISO/IEC 12207`) con niveles de capacidad del 0 al 5.  
+Hoy ha sido reemplazada por la familia `ISO/IEC 33000`, que amplía su alcance, mejora su flexibilidad y formaliza aún más el proceso de evaluación y mejora continua.  
+
+La `ISO/IEC 15504`, conocida también como **SPICE (Software Process Improvement and Capability dEtermination)**, es una norma internacional que define un modelo **para evaluar y mejorar la capacidad de los procesos de software en una organización**.
+
+**Objetivos:**
+- Determinar la capacidad de los procesos actuales
+- Guiar la mejora continua de dichos procesos
+
+**Estructura del modelo `ISO/IEC 15504`**  
+1. **Dimensión de proceso:** Lista de procesos definidos (típicamente tomando como base la norma ISO/IEC 12207).
+2. **Dimensión de capacidad:** Define 6 niveles de capacidad que indican qué tan bien se desempeña un proceso en una organización.
+   - Nivel 0 - Incompleto
+   - Nivel 1 - Realizado
+   - Nivel 2 - Gestionado
+   - Nivel 3 - Establecido
+   - Nivel 4 - Predecible
+   - Nivel 5 - Optimizado
+
+
 ## 23.   Explique qué significa realizar una certificación bajo la norma IRAM-ISO 9001:2015.  
-## 24.   Indique para qué se utiliza la norma ISO 90003. ¿Es posible certificar bajo esta norma? 
+Certificarse bajo la norma `IRAM-ISO 9001:2015` significa que una organización implementa un Sistema de Gestión de la Calidad conforme a estándares internacionales, orientado a satisfacer al cliente, asegurar la eficacia de los procesos y fomentar la mejora continua. Esta certificación es otorgada por un ente externo (como IRAM) y refleja la madurez organizacional en la gestión de calidad, no del producto en sí.
+
+**“La certificación ISO 9001 no garantiza calidad del producto, pero sí garantiza que existen procesos formales, repetibles, trazables y medibles, lo que es condición necesaria para obtener productos o servicios de calidad.”**
+
+## 24.   Indique para qué se utiliza la norma ISO 90003. ¿Es posible certificar bajo esta norma?
+La norma `ISO/IEC 90003` es una guía que ayuda a aplicar los requisitos de `ISO 9001` en el contexto del desarrollo de software. No es certificable por sí misma, pero acompaña la implementación de un **Sistema de Gestión de la Calidad** en organizaciones de software que deseen certificarse bajo `ISO 9001`.
+
 ## 25.   ¿Qué beneficios trae aplicar un Sistema de Gestión de la Calidad (SGC)? 
+Un **SGC** es un conjunto de políticas, procesos, recursos y responsabilidades que una organización establece para planificar, ejecutar, controlar y mejorar la calidad de sus productos o servicios.  
+Aplicar un **SGC** implica institucionalizar la calidad como una forma de trabajo y de toma de decisiones.  
+
+1. **Mejora continua**
+- Estimula la revisión permanente de los procesos.
+- Fomenta la identificación de oportunidades de mejora.
+- Se basa en el ciclo PDCA (Plan – Do – Check – Act).
+
+2. **Mayor satisfacción del cliente**
+- Al entender y cumplir mejor sus requisitos.
+- Mejora la experiencia del usuario, incluso en productos de software.
+
+3. **Toma de decisiones basada en evidencia**
+- El SGC promueve el uso de métricas, registros y datos para decidir.
+- Reduce la improvisación o las decisiones arbitrarias.
+
+4. **Mayor control y trazabilidad**
+- Todos los procesos quedan documentados, medidos y controlados.
+- Se facilita el seguimiento de errores, cambios y entregas.
+
+5. **Eficiencia operativa**
+- Mejora la asignación de recursos.
+- Reduce reprocesos, tiempos muertos y costos innecesarios.
+
+6. **Mejor posicionamiento competitivo**
+- Permite a la organización demostrar madurez y confiabilidad.
+- Ayuda a cumplir con requisitos de licitaciones o clientes corporativos.
+
+7. **Cumplimiento legal y contractual**
+- Facilita demostrar conformidad con normas, contratos o marcos regulatorios.
+
+8. **Mejora del clima organizacional**
+- Clarifica roles, responsabilidades y expectativas.
+- Fomenta la participación del personal y la comunicación interna.
+
+
+
 ## 26.   El “Alcance” del SGC es una descripción resumida del mismo y su naturaleza. Indique qué características debe tener. 
+Según la `ISO 9001:2015`, el alcance del SGC debe tener las siguientes características:
+
+1. **Estar alineado con el contexto de la organización**
+- El entorno interno y externo
+- Las partes interesadas (clientes, proveedores, reguladores)
+- Los objetivos estratégicos
+
+1. **Definir claramente qué productos y servicios abarca**
+- Tiene que especificar qué tipo de productos o servicios están cubiertos por el SGC.
+- Ejemplo: “Desarrollo, mantenimiento y soporte de software para la industria financiera”.
+
+3. **Incluir ubicación/es físicas o virtuales**
+- Si el sistema aplica a toda la empresa o solo a una parte (por ejemplo, una sucursal o una unidad de negocio).
+- Importante en organizaciones distribuidas o con procesos tercerizados.
+
+4. **Especificar exclusiones justificadas**
+- La norma permite excluir ciertos requisitos si no aplican al alcance de la organización, pero deben justificarse.
+- Por ejemplo, si no se diseñan productos, puede excluirse el requisito sobre “diseño y desarrollo”.
+
+5. **Ser coherente con los procesos del SGC**
+- El alcance debe coincidir con los procesos definidos en el SGC. No puede declarar alcance sobre un área que no esté cubierta en los procedimientos, políticas o registros.
+
+
+
 ## 27.   Los “Objetivos” del SGC establecen las metas a las que se desea llegar con la certificación y deben suponer un avance, buscando la “mejora continua”. Indique qué características deben tener. 
+Según `ISO 9001:2015` (cláusula 6.2), los objetivos deben tener las siguientes características:
+
+1. **Ser coherentes con la política de calidad**
+- Deben alinearse con la visión, misión y compromiso organizacional con la calidad.
+- La política es la declaración general, los objetivos son su traducción a metas concretas.
+
+2. **Ser medibles**
+- Deben permitir una evaluación objetiva: deben tener indicadores y unidades (tiempo, cantidad, porcentaje, etc.).
+- Ejemplo: "Reducir en un 20% los errores post-entrega en el segundo semestre".
+
+3. **Ser alcanzables y realistas**
+- Deben estar al alcance de los recursos actuales, pero implicar un desafío progresivo.
+- El objetivo no debe ser tan fácil que no motive, ni tan ambicioso que sea imposible.
+
+4. **Ser relevantes para la conformidad del producto y la satisfacción del cliente**
+- Tienen que contribuir a mejorar el producto, el proceso o el servicio ofrecido.
+- Deben impactar positivamente en la experiencia del cliente o usuario.
+
+5. **Estar documentados y comunicados**
+- Deben ser conocidos por todos los niveles organizacionales implicados.
+- Pueden estar en un tablero, informe de planificación o intranet.
+
+6. **Ser monitoreados, actualizados y revisados**
+- Debe haber un seguimiento periódico (ej. mensual o trimestral).
+- Se deben tomar acciones correctivas si no se cumplen.
+
 ## 28.   Dados los siguientes objetivos, indicar si están bien escritos y por qué. Reescribir los que no considere correctos de modo que cumplan con las características. 
 ### a. No tener solicitudes de cambios en los requerimientos funcionales 
+Esto esta mal, no es realista pensar que no van a existir cambios, no es una meta medible y alcanzable. Podriamos modificarlo e indicar un rango de cambios aceptables dentro de los requetimientos funcionales.  
+*"Reducir en un 10% las solicituds de cambios en los requerimientos funcionales"*  
+
 ### b. Tener pocos errores en los requerimientos funcionales implementados 
+Si bien es bastante acertado, decir "pocos" no permite medir este objetivo
+*"Reducir a 3 errores máximo en cada iteracion al implementar requerimientos funcionales"*
+
 ### c. Tener   un  desvío  promedio  (por tarea)  entre  el tiempo  insumido  en desarrollo  y  el tiempo estimado menor al 25% 
+Este objetivo es corecto, ya que demuestra ser **medible, claro y realista**
+
 ## 29.   El “Mapa de Procesos” busca  mantener  una  estructura  coherente  de  la  información documentada del sistema.  
-### a. Indique cuáles son los tipos de procesos que debe contener y qué representan cada uno de ellos. 
-### b. Indique qué significan los clientes en el Mapa de Procesos y qué representan. 
+El Mapa de Procesos es una representación gráfica del funcionamiento del sistema de gestión de calidad, donde se visualiza cómo interactúan los procesos principales de una organización.  
+### a. Indique cuáles son los tipos de procesos que debe contener y qué representan cada uno de ellos.   
+1. **Procesos Estratégicos**
+- Son los procesos relacionados con la dirección y el liderazgo.
+- Se encargan de definir políticas, objetivos, planificación estratégica, seguimiento y revisión del SGC.
+- Representan la toma de decisiones de alto nivel.
+
+2. **Procesos Clave (o de realización / operativos)**
+- Son los procesos que generan valor directamente para el cliente.
+- Están relacionados con la producción o prestación del servicio.
+- En una empresa de software serían, por ejemplo, análisis, desarrollo, pruebas y entrega.
+
+3. **Procesos de Apoyo (o soporte)**
+- Respaldan el funcionamiento de los procesos clave.
+- Aportan infraestructura, recursos, conocimientos o servicios internos necesarios.
+- Ejemplos: gestión de recursos humanos, infraestructura tecnológica, compras, formación, QA.
+
+### b. Indique qué significan los clientes en el Mapa de Procesos y qué representan.   
+En el Mapa de Procesos, los clientes representan los destinatarios de los productos o servicios generados por la organización.  
+**Externos:** los usuarios o clientes finales del software o servicio.  
+**Internos:** otras áreas o procesos dentro de la misma organización que reciben una salida como insumo.  
+
+**En el mapa, los clientes suelen ubicarse en los extremos:**  
+- **A la izquierda:** como fuente de requisitos (entrada).
+- **A la derecha:** como receptores del producto o servicio (salida).
+
+***También se puede marcar el ciclo de retroalimentación, cuando el cliente devuelve opiniones, pedidos de mejora o no conformidades.***
+
 ### c. Presente un ejemplo de cada una de las regiones del mapa de procesos. 
  
+**Ejemplo de proceso estratégico**  
+- “Gestión del sistema de calidad”
+- Define políticas, objetivos y revisa indicadores. Requiere liderazgo y análisis de desempeño global.
+
+**Ejemplo de proceso clave**  
+- “Desarrollo de software a medida”
+- Incluye análisis de requerimientos, codificación, pruebas funcionales y entrega al cliente. Directamente genera valor.
+
+**Ejemplo de proceso de apoyo**  
+- “Gestión de infraestructura tecnológica”
+- Asegura disponibilidad de servidores, red, entornos de prueba y herramientas necesarias para el equipo de desarrollo.
  
 # Parte VI: Ejercicios 
 ## 30.  Realizar una planificación para la evaluación de productos de software según el modelo de evaluación definido en la ISO/IEC 25040 y las características/métricas de la calidad de producto definidos en la ISO/IEC 25010.  
@@ -279,3 +575,14 @@ La norma permite distintos métodos de combinación (cuantitativos o cualitativo
 #### a. Alcance del SGC 
 #### b. Objetivos del SGC 
 #### c. Mapa de procesos
+
+
+
+
+
+
+
+
+
+
+
